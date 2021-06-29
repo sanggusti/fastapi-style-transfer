@@ -4,17 +4,13 @@ import uuid
 from concurrent.futures import ProcessPoolExecutor
 from functools import partial
 
-import cv2
-import uvicorn
-from fastapi import File
-from fastapi import FastAPI
-from fastapi import UploadFile
-import numpy as np
-from PIL import Image
-
 import config
+import cv2
 import inference
-
+import numpy as np
+import uvicorn
+from fastapi import FastAPI, File, UploadFile
+from PIL import Image
 
 app = FastAPI()
 
